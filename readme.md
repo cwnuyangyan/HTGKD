@@ -17,10 +17,11 @@ The experiments are conducted on one GPU (NVIDIA RTX TITAN).
 
 1. First training model on the source data,  Office-Home dataset is shown here.
 
-> ~/anaconda3/bin/python htgkd_source.py --trte val --output ckpsglx2020r0/source/ --da uda --gpu_id 0 --dset office-home --max_epoch 50 --s 0 --seed 2020
-> ~/anaconda3/bin/python htgkd_source.py --trte val --output ckpsglx2020r0/source/ --da uda --gpu_id 0 --dset office-home --max_epoch 50 --s 1 --seed 2020
-> ~/anaconda3/bin/python htgkd_source.py --trte val --output ckpsglx2020r0/source/ --da uda --gpu_id 0 --dset office-home --max_epoch 50 --s 2 --seed 2020
-> ~/anaconda3/bin/python htgkd_source.py --trte val --output ckpsglx2020r0/source/ --da uda --gpu_id 0 --dset office-home --max_epoch 50 --s 3 --seed 2020
+~/anaconda3/bin/python htgkd_source.py --trte val --output ckpsglx2020r0/source/ --da uda --gpu_id 0 --dset office-home --max_epoch 50 --s 0 --seed 2020
+
+~/anaconda3/bin/python htgkd_source.py --trte val --output ckpsglx2020r0/source/ --da uda --gpu_id 0 --dset office-home --max_epoch 50 --s 1 --seed 2020
+~/anaconda3/bin/python htgkd_source.py --trte val --output ckpsglx2020r0/source/ --da uda --gpu_id 0 --dset office-home --max_epoch 50 --s 2 --seed 2020
+~/anaconda3/bin/python htgkd_source.py --trte val --output ckpsglx2020r0/source/ --da uda --gpu_id 0 --dset office-home --max_epoch 50 --s 3 --seed 2020
 
 2. Then adapting source model to target domain, with only the unlabeled target data.
 
